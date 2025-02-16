@@ -1,0 +1,14 @@
+[package]
+name = "hello-wasm"
+version = "0.1.0"
+edition = "2021"
+author=["RuWmy"]
+license="MIT"
+repository="https://github.com/RuWmy/hello-wasm"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+wasm-bindgen = "0.2.100"
+web-sys = { version = "0.3", features = ["Window", "console"] }
